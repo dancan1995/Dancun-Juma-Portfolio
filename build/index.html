@@ -3,63 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dancun Juma - Portfolio</title>
+    <title>Dancun Juma - Data Science Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f0f8ff;
         }
         header {
             text-align: center;
-            padding: 20px;
-            background-color: #0078d7;
+            padding: 30px;
+            background-color: #005f8b;
             color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
         .profile-image {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
+            border: 4px solid white;
             margin: 20px auto;
             display: block;
-            border: 5px solid white;
+        }
+        header h1 {
+            margin: 10px 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        header a {
+            text-decoration: none;
+            color: #ffcc00;
+            font-weight: bold;
         }
         .container {
-            max-width: 900px;
-            margin: 20px auto;
+            max-width: 1100px;
+            margin: 40px auto;
             background: white;
-            padding: 20px;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            text-align: center;
-            color: #333;
+        h2 {
+            color: #0078d7;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #0078d7; /* Adds a medium-thick underline */
+            padding-bottom: 5px; /* Optional: adds some space between the text and the line */
         }
         .section {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
-        ul {
+        .section ul {
             list-style-type: none;
-            padding: 0;
+            padding-left: 0;
         }
-        ul li {
+        .section li {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        .section ul li ul {
+            padding-left: 20px;
+            font-size: 1em;
+            list-style-type: circle;
+        }
+        .skills-list, .projects-list {
+            columns: 1;
+            column-gap: 30px;
+        }
+        .skills-list li, .projects-list li {
             margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #005f8b;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://imgur.com/4e213tG.jpg" alt="Profile Picture" class="profile-image">
-        <h1>Dancun Odhiambo Juma</h1>
-        <p>Passionate Data Scientist with expertise in Machine Learning, AI, and Statistical Analysis</p>
+        <img src="https://imgur.com/4e213tG.jpg" alt="Dancun Juma's Profile Picture" class="profile-image">
+        <h1>Dancun Juma</h1>
+        <p>Data Scientist | Machine Learning Enthusiast | Biostatistics Specialist</p>
         <p><a href="https://github.com/dancan1995" target="_blank">GitHub</a></p>
     </header>
+
     <div class="container">
         <section class="section">
             <h2>Professional Summary</h2>
-            <p>Passionate data scientist with a strong background in machine learning, deep learning, computer vision, statistics, and natural language processing. Skilled in SAS, R, Julia, Stata, EViews, Tableau, Power BI, SQL, MongoDB, Redis, SPSS, SAS Viya, KNIME, Orange, Excel, WEKA, Gephi, Python, TensorFlow, PyTorch, and pandas. Excellent problem-solving, research, and collaboration abilities.</p>
+            <p>Passionate data scientist with a comprehensive background in machine learning, deep learning, computer vision, statistics, and natural language processing. Highly proficient in tools such as SAS, R, Python, Stata, Tableau, Power BI, TensorFlow, PyTorch, and various databases like MongoDB and Redis. Strong problem-solving skills, with a focus on data-driven decision making, predictive modeling, and effective collaboration.</p>
         </section>
 
         <section class="section">
@@ -67,13 +104,12 @@
             <ul>
                 <li><strong>Master of Science, Data Science and Analytics</strong>, Grand Valley State University, Allendale, MI (August 2023 - April 2025)
                     <ul>
-                        <li>Completed courses in Data Engineering, Statistical Computing with R, Knowledge Discovery & Data Mining, Information Visualization, High-Performance Computing, and Ethics in Applied Science.</li>
+                        <li>Courses completed in Data Engineering, Statistical Computing with R, Information Visualization, High-Performance Computing, and Ethics in Applied Science.</li>
                     </ul>
                 </li>
                 <li><strong>Bachelor of Science, Statistics</strong>, South Eastern Kenya University, Kitui, Kenya (August 2015 - June 2019)
                     <ul>
-                        <li>Completed courses in calculus, probability, and statistics.</li>
-                        <li>Studied data analysis using SAS Studio and Python.</li>
+                        <li>Courses included calculus, probability, and data analysis using SAS Studio and Python.</li>
                     </ul>
                 </li>
             </ul>
@@ -84,41 +120,34 @@
             <ul>
                 <li><strong>Biostatistics Graduate Assistant</strong>, GVSU Kirkhof College of Nursing, Grand Rapids, MI (August 2024 - Present)
                     <ul>
-                        <li>Provided support in research design, data management, statistical analysis, and program evaluation.</li>
-                        <li>Utilized advanced statistical software (SPSS, R, SAS, Python) to assist faculty and students in improving nursing practices.</li>
-                        <li>Conducted data analysis for clinical trials and research publications.</li>
+                        <li>Assisting in clinical research design, data management, and statistical analysis for various nursing projects.</li>
+                        <li>Utilizing advanced software for data analysis and supporting faculty in academic research.</li>
                     </ul>
                 </li>
                 <li><strong>Data Science Build Student Consultant</strong>, The Build Fellowship by Open Avenues, Allendale (July 2024 - August 2024)
                     <ul>
-                        <li>Analyzed gender biases in loan approval processes using Python.</li>
-                        <li>Collaborated with experts to identify key insights and equitable outcomes.</li>
-                        <li>Presented findings to stakeholders through comprehensive reports and visualizations.</li>
+                        <li>Analyzed gender biases in loan approval systems using Python and presented findings to stakeholders.</li>
                     </ul>
                 </li>
                 <li><strong>Math Tutor</strong>, EQPD, Allendale, USA (July 2024 - August 2024)
                     <ul>
-                        <li>Provided tutoring in delta mathematics for underprivileged students.</li>
-                        <li>Instilled problem-solving skills, collaboration, and effective communication techniques.</li>
+                        <li>Tutored underprivileged students in mathematics, enhancing their problem-solving and communication skills.</li>
                     </ul>
                 </li>
                 <li><strong>Data Scientist</strong>, Stan Consulting Group Limited, Nairobi, Kenya (February 2021 - August 2023)
                     <ul>
-                        <li>Led data analysis projects and developed predictive models using SAS, R Studio, and Python.</li>
-                        <li>Performed statistical tests to support data-driven business strategies.</li>
-                        <li>Created interactive dashboards with Tableau, Power BI, and Excel for decision-making.</li>
+                        <li>Developed predictive models and visual dashboards to drive strategic business decisions.</li>
+                        <li>Performed statistical analysis and interpreted data to improve client outcomes.</li>
                     </ul>
                 </li>
                 <li><strong>Research Assistant</strong>, The Youth Agenda, Nairobi, Kenya (October 2020 - November 2020)
                     <ul>
-                        <li>Conducted comprehensive data collection and analysis on evaluating COVID-19 response funds.</li>
-                        <li>Leveraged R and Tableau for data visualization and presentation.</li>
+                        <li>Collected and analyzed data for evaluating COVID-19 response programs and visualized data with Tableau.</li>
                     </ul>
                 </li>
-                <li><strong>Research Assistant</strong>, International Training and Education Center for Health, Siaya, Kenya (August 2019 - October 2019)
+                <li><strong>Research Assistant</strong>, ITECH-Kenya, Siaya, Kenya (August 2019 - October 2019)
                     <ul>
-                        <li>Collaborated with CDC and the University of Washington on data collection for HIV/AIDS care model evaluation.</li>
-                        <li>Utilized REDCap and SPSS for comprehensive data analysis and reporting.</li>
+                        <li>Collaborated with CDC and the University of Washington in HIV/AIDS care model evaluation.</li>
                     </ul>
                 </li>
             </ul>
@@ -126,37 +155,50 @@
 
         <section class="section">
             <h2>Skills</h2>
-            <ul>
+            <ul class="skills-list">
                 <li>Programming Languages: Python (pandas, NLTK, Scikit-learn, Keras), R, Julia, SQL</li>
-                <li>Data Analysis Tools: SAS, SPSS, Stata, EViews, Tableau, Power BI, Excel</li>
-                <li>Machine Learning and AI Frameworks: TensorFlow, PyTorch</li>
-                <li>Database Systems: MongoDB, Redis, SQL</li>
+                <li>LLM Development Frameworks: LangChain, Semantic Kernel</li>
+                <li>Database Systems: Relational (SQL), Non-relational (NoSQL, MongoDB, Redis)</li>
                 <li>Cloud Platforms: AWS, Azure, Google Cloud</li>
-                <li>Other Tools: WEKA, Gephi, KNIME, Orange, Databricks</li>
-                <li>Core Competencies: Statistical analysis, predictive modeling, data visualization, NLP, data wrangling, feature engineering, model validation, and deployment.</li>
+                <li>Machine Learning & Deep Learning: TensorFlow, PyTorch</li>
+                <li>Data Processing & Embedding: SQL query generation, Data wrangling, Feature engineering, Embedding techniques</li>
+                <li>Generative AI & NLP: Prompt engineering, RAG workflow development, NLP, Unstructured & structured data processing</li>
+                <li>Version Control & CI/CD: Git, Unit/Integration/End-to-End testing, Release management</li>
+                <li>AI/GenAI Applications: Generative AI development, AI architecture solutioning, Analytical model development</li>
+                <li>Analytical Techniques: Statistical analysis, Predictive modeling, Statistical inference, Hypothesis testing</li>
+                <li>Big Data: Data cleaning, transformation, mining, and governance</li>
+                <li>Business & Client Interaction: Business process analysis, Requirements gathering, Client presentations</li>
+                <li>Project Management: Leading teams, Coaching, Feedback, Proof of concept development</li>
             </ul>
         </section>
 
         <section class="section">
             <h2>Projects</h2>
-            <ul>
+            <ul class="projects-list">
                 <li><strong>Precision Farming in West Michigan</strong> (April 2024 - Present)
                     <ul>
-                        <li>Cleaned, transformed, and analyzed data on precision farming technology.</li>
-                        <li>Evaluated the appropriateness of emerging technologies using Python and statistical methods.</li>
+                        <li>Developing machine learning models to analyze crop yield, soil moisture, and weather data to optimize irrigation and fertilizer usage for local farms in West Michigan.</li>
+                        <li>Collaborating with local farmers to integrate real-time data from IoT sensors to guide decision-making on irrigation practices and planting schedules.</li>
+                        <li>Utilizing predictive analytics and time series analysis to forecast crop growth patterns and anticipate water and nutrient needs based on environmental variables.</li>
+                        <li>Implementing a recommendation system for farmers based on seasonal trends, soil type, and crop-specific requirements to increase yield and reduce water usage.</li>
+                        <li>Collaborating with agricultural technology partners to deploy a user-friendly dashboard for real-time insights into farming operations.</li>
                     </ul>
                 </li>
-                <li><strong>AI Therapist for Mental Health Chatbot Development</strong> (Ongoing with Licensing for market use)
+                <li><strong>AI Therapist for Mental Health Chatbot</strong> (Ongoing with Deployment & Licensing for the market use)
                     <ul>
-                        <li>Designed and implemented an AI-powered chatbot to support individuals with ADHD and depression.</li>
-                        <li>Utilized natural language processing (NLP) techniques to provide empathetic and relevant responses.</li>
-                        <li>Incorporated knowledge graphs to offer tailored mental health resources.</li>
-                        <li>Tested and validated the chatbot using real-world scenarios and user feedback.</li>
+                        <li>Developed an AI-powered mental health chatbot that focuses on providing support for individuals with ADHD and depression. The system is designed to provide conversational support, offer coping mechanisms, and encourage positive behavioral changes.</li>
+                        <li>The chatbot is powered by transformer-based models particularly leveraging Generative Pretrained Transformers (GPT), to understand and generate human-like responses to user inputs.</li>
+                        <li>Utilized GPT-3 for natural language understanding (NLU) and natural language generation (NLG) tasks, ensuring the bot can engage in empathetic, context-aware conversations with users.</li>
+                        <li>The system is trained using large-scale conversation datasets, enabling it to respond to various mental health-related queries with context and empathy, maintaining coherent dialogue over multiple exchanges.</li>
+                        <li>Built upon the transformer architecture, the model leverages the self-attention mechanism to understand the relationships and dependencies within user inputs for accurate responses.</li>
                     </ul>
                 </li>
             </ul>
         </section>
-        
     </div>
+
+    <footer>
+        <p>Contact: dancanodhiambo95@gmail.com | GitHub: <a href="https://github.com/dancan1995" target="_blank">dancan1995</a></p>
+    </footer>
 </body>
 </html>
