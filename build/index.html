@@ -6,11 +6,11 @@
     <title>Dancun Juma - Data Science Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
         }
+
         header {
             text-align: center;
             padding: 30px;
@@ -18,18 +18,11 @@
             color: white;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-        .profile-image {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 4px solid white;
-            margin: 20px auto;
-            display: block;
-        }
+
         header h1 {
-            margin: 10px 0;
-            font-size: 2.5em;
+            font-size: 2.5rem;
         }
+
         header p {
             font-size: 1.2em;
             margin: 5px 0;
@@ -39,6 +32,89 @@
             color: #ffcc00;
             font-weight: bold;
         }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 0.5rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #575757;
+        }
+
+        section {
+            padding: 2rem;
+            background: #fff;
+            margin: 1rem auto;
+            max-width: 1200px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill {
+            background: #4285f4;
+            color: #fff;
+            padding: 1rem;
+            flex: 1 1 calc(33.333% - 2rem);
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .skill {
+                flex: 1 1 calc(50% - 2rem);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .skill {
+                flex: 1 1 100%;
+            }
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin: 20px auto;
+            display: block;
+        }
+
         .container {
             max-width: 1100px;
             margin: 40px auto;
@@ -47,6 +123,7 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         h2 {
             color: #0078d7;
             font-size: 1.8em;
@@ -54,35 +131,153 @@
             border-bottom: 3px solid #0078d7; /* Adds a medium-thick underline */
             padding-bottom: 5px; /* Optional: adds some space between the text and the line */
         }
-        .section {
-            margin-bottom: 25px;
-        }
-        .section ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .section li {
-            font-size: 1.1em;
-            margin: 10px 0;
-        }
-        .section ul li ul {
-            padding-left: 20px;
-            font-size: 1em;
-            list-style-type: circle;
-        }
-        .skills-list, .projects-list {
-            columns: 1;
-            column-gap: 30px;
-        }
-        .skills-list li, .projects-list li {
-            margin-bottom: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #005f8b;
-            color: white;
-        }
+
+        .certifications-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.certifications-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.certification-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certification-item h3 {
+  font-size: 1.2em;
+  color: #0078d7;
+  margin-bottom: 10px;
+}
+
+.certification-item p {
+  font-size: 1em;
+  color: #555;
+}
+
+.certification-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.courses-section {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.courses-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.course-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-item h3 {
+  font-size: 1.5em;
+  color: #0078d7;
+  margin-bottom: 10px;
+}
+
+.course-item p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.course-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.volunteer-section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.volunteer-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.volunteer-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.volunteer-item h3 {
+  font-size: 1.8em;
+  color: #0078d7;
+  margin-bottom: 5px;
+}
+
+.volunteer-item p {
+  font-size: 1em;
+  color: #555;
+  margin: 5px 0;
+}
+
+.volunteer-item h4 {
+  font-size: 1.3em;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.volunteer-item ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.volunteer-item ul li {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.volunteer-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
     </style>
 </head>
 <body>
@@ -115,43 +310,100 @@
             </ul>
         </section>
 
-        <section class="section">
+        <section id="work-experience">
             <h2>Work Experience</h2>
-            <ul>
-                <li><strong>Biostatistics Graduate Assistant</strong>, GVSU Kirkhof College of Nursing, Grand Rapids, MI (August 2024 - Present)
-                    <ul>
-                        <li>Assisting in clinical research design, data management, and statistical analysis for various nursing projects.</li>
-                        <li>Utilizing advanced software for data analysis and supporting faculty in academic research.</li>
-                    </ul>
-                </li>
-                <li><strong>Data Science Build Student Consultant</strong>, The Build Fellowship by Open Avenues, Allendale (July 2024 - August 2024)
-                    <ul>
-                        <li>Analyzed gender biases in loan approval systems using Python and presented findings to stakeholders.</li>
-                    </ul>
-                </li>
-                <li><strong>Math Tutor</strong>, EQPD, Allendale, USA (July 2024 - August 2024)
-                    <ul>
-                        <li>Tutored underprivileged students in mathematics, enhancing their problem-solving and communication skills.</li>
-                    </ul>
-                </li>
-                <li><strong>Data Scientist</strong>, Stan Consulting Group Limited, Nairobi, Kenya (February 2021 - August 2023)
-                    <ul>
-                        <li>Developed predictive models and visual dashboards to drive strategic business decisions.</li>
-                        <li>Performed statistical analysis and interpreted data to improve client outcomes.</li>
-                    </ul>
-                </li>
-                <li><strong>Research Assistant</strong>, The Youth Agenda, Nairobi, Kenya (October 2020 - November 2020)
-                    <ul>
-                        <li>Collected and analyzed data for evaluating COVID-19 response programs and visualized data with Tableau.</li>
-                    </ul>
-                </li>
-                <li><strong>Research Assistant</strong>, ITECH-Kenya, Siaya, Kenya (August 2019 - October 2019)
-                    <ul>
-                        <li>Collaborated with CDC and the University of Washington in HIV/AIDS care model evaluation.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+            
+            <div class="job">
+              <h3>Biostatistics Graduate Assistant</h3>
+              <p><strong>GVSU Kirkhof College of Nursing</strong></p>
+              <p>Aug 2024 - Present · 6 mos</p>
+              <p>Grand Rapids, Michigan, United States · Hybrid</p>
+              <ul>
+                <li>Assist faculty and students with research design, data management, and statistical analysis using advanced software, ensuring accurate interpretation of results.</li>
+                <li>Facilitate program development and evaluation by designing measurement tools, collecting and analyzing data, and reporting outcomes to enhance nursing practices.</li>
+                <li>Lead workshops and training sessions on biostatistical methods, tools, and software to promote evidence-based practice and quality improvement.</li>
+                <li>Uphold ethical standards by completing Responsible Conduct of Research (RCR) certification and reviewing research protocols to ensure compliance with institutional guidelines.</li>
+                <li>Act as a liaison between faculty, students, and the research team, and develop communication materials to highlight the availability and benefits of biostatistics support services.</li>
+              </ul>
+              <p><strong>Skills:</strong> SPSS Statistics, SAS (Programming Language), Communication, Clinical Research, Time Management, REDCap, Machine Learning, Statistical Data Analysis, Consulting, Web Development</p>
+            </div>
+          
+            <div class="job">
+              <h3>Data Science Build Student Consultant</h3>
+              <p><strong>The Build Fellowship by Open Avenues</strong></p>
+              <p>Jul 2024 - Aug 2024 · 2 mos</p>
+              <p>Allendale Charter Township, Michigan, United States · Remote</p>
+              <ul>
+                <li>Analyzed real-world datasets to identify trends and patterns related to gender.</li>
+                <li>Applied statistical tools and methodologies to assess gender biases in various contexts, including social, economic, and health-related datasets.</li>
+                <li>Collaborated with experts to understand the intersection of gender and data, and how societal structures impacted the interpretation of findings.</li>
+                <li>Presented key insights and recommendations to advocate for equitable outcomes based on the data analysis.</li>
+                <li>Enhanced skills in data visualization and storytelling to effectively communicate the importance of gender-responsive data analysis.</li>
+              </ul>
+              <p><strong>Skills:</strong> Tableau, Google Analytics, Microsoft Excel, Python (Programming Language), Microsoft SQL Server, Interdisciplinary Collaboration, Team Building, Leadership, Organization Skills, Facilitation</p>
+            </div>
+          
+            <div class="job">
+              <h3>Math Tutor</h3>
+              <p><strong>EQPD · Part-time</strong></p>
+              <p>Jan 2024 - Aug 2024 · 8 mos</p>
+              <p>USA · Remote</p>
+              <ul>
+                <li>Helped students with a strong foundation in delta mathematics, instilling problem-solving skills, and preparing them for success in academia and beyond.</li>
+              </ul>
+              <p><strong>Skills:</strong> Cross-Cultural Communication Skills, Leadership, Presentation Skills</p>
+            </div>
+          
+            <div class="job">
+              <h3>Data Scientist</h3>
+              <p><strong>Stan Consulting Group Limited · Contract</strong></p>
+              <p>Feb 2021 - Aug 2023 · 2 yrs 7 mos</p>
+              <p>Nairobi, Kenya · Hybrid</p>
+              <ul>
+                <li>Led data analysis, interpreting sets with advanced techniques, aligning with project goals. Spearheaded customer satisfaction indices, enhancing strategic decision-making.</li>
+                <li>Translated complex data insights into accessible reports for internal and external stakeholders.</li>
+                <li>Engaged remotely in diverse projects, covering statistical analysis, predictive modeling, and data-driven decision-making.</li>
+                <li>Manipulated, analyzed, and presented data effectively using SAS, R Studio, Python, Excel, EViews, Stata, Kraken, SAS Miner, Tableau, Power BI, MongoDB, Redis, SQL, and SPSS.</li>
+                <li>Created visually compelling representations of complex datasets for effective communication.</li>
+              </ul>
+              <p><strong>Skills:</strong> Databases, Python (Programming Language), R (Programming Language), SQL, Market Research, Machine Learning, Information Gathering, Statistical Data Analysis, Data Warehousing, SPSS Statistics, Cybersecurity, Data Engineering</p>
+            </div>
+          
+            <div class="job">
+              <h3>Research Assistant</h3>
+              <p><strong>The Youth Agenda · Part-time</strong></p>
+              <p>Oct 2020 - Nov 2020 · 2 mos</p>
+              <p>Nairobi, Kenya · On-site</p>
+              <ul>
+                <li>Worked on the Wajibika project study evaluating the utilization of COVID-19 response funds and open contracting conducted in Nairobi.</li>
+              </ul>
+              <p><strong>Skills:</strong> Data Science, Statistical Data Analysis</p>
+            </div>
+          
+            <div class="job">
+              <h3>Research Assistant</h3>
+              <p><strong>International Training and Education Center for Health (I-TECH) · Full-time</strong></p>
+              <p>Aug 2019 - Oct 2019 · 3 mos</p>
+              <p>Siaya County, Kenya</p>
+              <ul>
+                <li>Contributed to a vital HIV/AIDS care models evaluation project in collaboration with CDC and the University of Washington.</li>
+                <li>Performed data collection, analysis, and reporting using REDCap to streamline processes.</li>
+              </ul>
+              <p><strong>Skills:</strong> Market Research, REDCap, Data Science, Statistical Data Analysis</p>
+            </div>
+          
+            <div class="job">
+              <h3>Intern Statistician</h3>
+              <p><strong>Kenya National Bureau of Statistics · Internship</strong></p>
+              <p>May 2018 - Aug 2018 · 4 mos</p>
+              <p>Kisumu, Kisumu, Kenya</p>
+              <ul>
+                <li>Conducted data compilation and analysis using tools like R and SPSS.</li>
+              </ul>
+              <p><strong>Skills:</strong> IBM SPSS, Team Building, Data Collection, Kobo Collect, Presentation Skills, Network Troubleshooting</p>
+            </div>
+          </section>
+          
 
         <section class="section">
             <h2>Skills</h2>
@@ -195,6 +447,108 @@
                 </li>
             </ul>
         </section>
+
+        <section id="volunteer" class="volunteer-section">
+            <div class="container">
+              <h2>Volunteer Experience</h2>
+              <div class="volunteer-item">
+                <h3>Tax Consultant</h3>
+                <p><strong>KRA (Kenya Revenue Authority)</strong></p>
+                <p><em>Jan 2022 - Jan 2023 · 1 yr 1 mo</em></p>
+                <!-- <h4>Civil Rights and Social Action</h4> -->
+                <ul>
+                  <li>Filed taxes for the elderly in the community.</li>
+                  <li>Attended events on the importance of tax compliance.</li>
+                </ul>
+              </div>
+            </div>
+          </section>          
+
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+              <h2>Certifications</h2>
+              <div class="certifications-grid">
+                <div class="certification-item">
+                  <h3>Chatbot - The Development Guide 2024 (Beginner + Advanced)</h3>
+                </div>
+                <div class="certification-item">
+                  <h3>RCR - Nursing Graduate Students</h3>
+                </div>
+                <div class="certification-item">
+                  <h3>HSR - Social-Behavioral-Educational Researchers</h3>
+                </div>
+                <div class="certification-item">
+                  <h3>HSR - Biomedical Researchers</h3>
+                </div>
+                <div class="certification-item">
+                  <h3>Azure Data Factory for Data Engineers</h3>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="courses" class="courses-section">
+            <div class="container">
+              <h2>Courses</h2>
+              <div class="courses-grid">
+                <div class="course-item">
+                  <h3>Data Engineering</h3>
+                  <p><strong>CIS 660</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>Ethics and Professionalism in Applied Science</h3>
+                  <p><strong>PSM 650</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>High Performance Computing</h3>
+                  <p><strong>CIS 677</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>Information Visualization</h3>
+                  <p><strong>CIS 671</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>Knowledge Discovery & Data Mining</h3>
+                  <p><strong>CIS 635</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>Machine Learning</h3>
+                  <p><strong>CIS 678</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>Multivariate Data Analysis</h3>
+                  <p><strong>STA 526</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>Seminar in Professional Science Practice</h3>
+                  <p><strong>PSM 662</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>Statistical Computing and Graphics with R</h3>
+                  <p><strong>STA 518</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>Statistical Modelling I</h3>
+                  <p><strong>STA 631</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+                <div class="course-item">
+                  <h3>Statistical Programming</h3>
+                  <p><strong>STA 616</strong></p>
+                  <p>Associated with Grand Valley State University</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
     </div>
 
     <footer>
